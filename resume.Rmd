@@ -43,32 +43,6 @@ position_data <- read_csv('mypositions.csv') %>%
 ```
 
 
-Aside
-================================================================================
-
-Contact {#contact}
---------------------------------------------------------------------------------
-
-
-
-<i class="fa fa-envelope"></i> robertpikmets@gmail.com 
-<i class="fa fa-envelope"></i> linkedin
-<i class="fa fa-github"></i> github.com/robertpikmets
-<i class="fa fa-phone"></i> +372 5332 7319
-
-
-
-Language Skills {#skills}
---------------------------------------------------------------------------------
-- R
-- Python
-
-
-Last updated on `r Sys.Date()`.
-
-
-
-
 Main
 ================================================================================
 
