@@ -1,0 +1,116 @@
+---
+title: Robert Pikmets's CV"
+author: Robert Pikmets
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/custom_resume.css', 'css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(tidyverse)
+library(glue)
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- FALSE
+
+# Holds all the links that were inserted for placement at the end
+links <- c()
+
+source('parsing_functions.R')
+
+
+# First let's get the data, filtering to only the items tagged as
+# Resume items
+position_data <- read_csv('mypositions.csv') %>% 
+  filter(in_resume) %>% 
+  mutate(
+    # Build some custom sections by collapsing others
+    section = case_when(
+      section %in% c('work_experience', 'industry_positions') ~ 'positions', 
+      section %in% c('extra', 'by_me_press') ~ 'extra',
+      TRUE ~ section
+    )
+  ) 
+
+```
+
+
+Aside
+================================================================================
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+
+
+<i class="fa fa-envelope"></i> robertpikmets@gmail.com 
+<i class="fa fa-envelope"></i> linkedin
+<i class="fa fa-github"></i> github.com/robertpikmets
+<i class="fa fa-phone"></i> +372 5332 7319
+
+
+
+Language Skills {#skills}
+--------------------------------------------------------------------------------
+- R
+- Python
+
+
+Last updated on `r Sys.Date()`.
+
+
+
+
+Main
+================================================================================
+
+Robert Pikmets {#title}
+--------------------------------------------------------------------------------
+
+<pre style="font:inherit">
+<i class="fa fa-envelope"></i> robertpikmets@gmail.com      <i class="fab fa-linkedin-in"></i> linkedin.com/in/robert-pikmets      <i class="fa fa-github"></i> github.com/robertpikmets      <i class="fa fa-phone"></i> +372 5332 7319
+</pre>
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
+```
+
+
+
+Work Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('positions')
+```
+
+Extracurricular activities and achievements {data-icon=chess-knight}
+--------------------------------------------------------------------------------
+
+
+```{r}
+position_data %>% print_section('extra')
+```
+
+
+Technical skills  {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+<div class="tech">
+- <b>R</b> - Even this CV is automated and designed in R Markdown. Experience with ggplot2, dplyr, tidyr
+- <b>SQL</b> - Designed and coded a database imitating Twitch.tv in MySQL, consisting of 66 relational tables
+- <b>VBA</b> - Built a flexible personnel recruitment model in Excel as part of a school project. Code: git.io/vA9Ws
+- <b>Python</b> - Finished online course 6.00.1x, but I'm quite rusty now as I've been using mostly R
+- <b>Web development</b> - Experience with HTML, CSS, some JavaScript and Python's Django
+</div>
