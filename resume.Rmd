@@ -82,9 +82,9 @@ Technical skills  {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 <div class="tech">
-- <b>R</b> - Even this CV is automated and designed in R Markdown. Experience with ggplot2, dplyr, tidyr
+- <b>R</b> - Even this CV is automated with R and designed using RMarkdown. Experience with ggplot2, dplyr, tidyr, caret
+- <b>Python</b> - Experience with NumPy, SciPy, Pandas, Matplotlib, although I'm more comfortable in R
 - <b>SQL</b> - Designed and coded a database imitating Twitch.tv in MySQL, consisting of 66 relational tables
 - <b>VBA</b> - Built a flexible personnel recruitment model in Excel as part of a school project. Code: git.io/vA9Ws
-- <b>Python</b> - Finished online course 6.00.1x, but I'm quite rusty now as I've been using mostly R
-- <b>Web development</b> - Experience with HTML, CSS, some JavaScript and Python's Django
+- <b>Web development</b> - HTML, CSS, some JavaScript and Django. See https://github.com/robertpikmets/stockviz
 </div>
