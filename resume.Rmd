@@ -69,7 +69,7 @@ Work Experience {data-icon=suitcase}
 position_data %>% print_section('positions')
 ```
 
-Extracurricular activities and achievements {data-icon=chess-knight}
+Extracurricular activities {data-icon=chess-knight}
 --------------------------------------------------------------------------------
 
 
@@ -78,13 +78,12 @@ position_data %>% print_section('extra')
 ```
 
 
-Technical skills  {data-icon=laptop}
+Skills  {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 <div class="tech">
-- <b>R</b> - Even this CV is automated with R and designed using RMarkdown. Experience with ggplot2, dplyr, tidyr, caret
-- <b>Python</b> - Experience with NumPy, SciPy, Pandas, Matplotlib, although I'm more comfortable in R
-- <b>SQL</b> - Designed and coded a database imitating Twitch.tv in MySQL, consisting of 66 relational tables
-- <b>VBA</b> - Built a flexible personnel recruitment model in Excel as part of a school project. Code: git.io/vA9Ws
-- <b>Web development</b> - HTML, CSS, some JavaScript and Django. See https://github.com/robertpikmets/stockviz
+- <b>Languages</b> - R, Python, SQL, VBA, MATLAB
+- <b>Machine learning and modelling</b> - Regression, classification, clustering, deep learning, feature engineering, regularization methods, time series models. Experience with Skicit-learn, Keras, Tensorflow.
+- <b>Data analysis</b> - Retrieving data with SQL, pre-processing and manipulation (dplyr in R and pandas in Python), visualisation and presenting using ggplot2 and RMarkdown (even this CV is automated with R and R Markdown)
+- <b>Statistics</b> - Statistical inference, descriptive statistics, hypothesis testing
 </div>
