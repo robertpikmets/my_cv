@@ -53,6 +53,13 @@ Robert Pikmets {#title}
 <i class="fa fa-envelope"></i> robertpikmets@gmail.com      <i class="fab fa-linkedin-in"></i> linkedin.com/in/robert-pikmets      <i class="fa fa-github"></i> github.com/robertpikmets      <i class="fa fa-phone"></i> +372 5332 7319
 </pre>
 
+Work Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('positions')
+```
+
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -60,14 +67,6 @@ Education {data-icon=graduation-cap data-concise=true}
 position_data %>% print_section('education')
 ```
 
-
-
-Work Experience {data-icon=suitcase}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('positions')
-```
 
 Extracurricular activities {data-icon=chess-knight}
 --------------------------------------------------------------------------------
@@ -82,8 +81,7 @@ Skills  {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 <div class="tech">
-- <b>Languages</b> - R, Python, SQL, VBA, MATLAB
-- <b>Machine learning and modelling</b> - Regression, classification, clustering, deep learning, feature engineering, regularization methods, time series models. Experience with Skicit-learn, Keras, Tensorflow.
-- <b>Data analysis</b> - Retrieving data with SQL, pre-processing and manipulation (dplyr in R and pandas in Python), visualisation and presenting using ggplot2 and RMarkdown (even this CV is automated with R and R Markdown)
-- <b>Statistics</b> - Statistical inference, descriptive statistics, hypothesis testing
+- <b>Languages</b> - Python, SQL, R, Bash, VBA
+- <b>Tools/frameworks</b> - Flask, PostgreSQL, Git, Docker, Helm, CI/CD, Linux, Cloud services (AWS)
+- <b>Software engineering skills</b> - Unit testing, REST APIs, building ETL pipelines, agile framework
 </div>
